@@ -1,0 +1,995 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.part_unu{
+    /* display: flex; */
+    height: 50em;
+    width: 100vw;
+    border: 1px solid black;
+    background: url(../img/remita/hero_img.png) no-repeat center;
+    background-size: cover;
+    /* z-index: 6; */
+}
+nav{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    border: 1px solid yellow;
+    gap: 20px;
+    position: fixed;
+    padding: 21px;
+    z-index: 4;
+    background-color: rgb(244,246,246);
+
+}
+.logo{
+    height: 1.875em;
+    width: 12.5em;
+    margin: 20px;
+    background: url(../img/remita/remita_orange_new_logo.svg) no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+}
+.menu{
+    padding: 30px 0px;
+    height: 57px;
+    position: absolute;
+    right: 20px;
+    /* margin: 10px; */
+    border: 1px solid purple;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    font-family: raleway, sans-serif;
+}
+.menu a{
+    margin-right: 24px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+.menu button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    border:none;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: rgb(233,236,239);
+}
+.menu button:hover{
+    background-color:white;
+}
+.menu .login::before{
+    content: url(../img/remita/security_icon.svg);
+}
+.menu .signUp::before{
+    content: url(../img/remita/sign_up_icon.svg);
+}
+.menu_icon{
+    position: relative;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width:70px;
+}
+
+.menu_icon svg:hover{
+    color: white;
+    fill: white;
+}
+.home{
+    margin-top: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    position: relative;
+    height:90%;
+    border:1px solid red;
+    font-family: raleway, sans-serif;
+}
+.home_text{
+    /* position: absolute; */
+    left: 75px;
+    top: 200px;
+    border: 1px solid black;
+    width: 40%;
+}
+.home_text p{
+    width: 90%;
+    display:flex;
+    flex-wrap:wrap;
+    font-size: 3em;
+    line-height: 46px;
+    text-align: left;
+   
+  
+}
+.home_text p span{
+    font-weight: 700;
+}
+.home button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 357px;
+    border:none;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: #f26524;
+    color: white;
+    text-align: center;
+    box-shadow: rgb(241, 101, 33) 0px 18.2571px 21.6157px -15.9059px;
+}
+#orange-btn{
+    border: none;
+    border-radius: 30px;
+    background-color: #f26524;
+    color: white;
+    text-align: center;
+    box-shadow: rgb(241, 101, 33) 0px 18.2571px 21.6157px -15.9059px;
+
+}
+#orange-btn:hover{
+    background-color: #d95129;
+}
+.home button i{
+    margin-left: 0.7em;
+    font-size: 1.2em;
+}
+.services{
+    /* padding-top: 10px; */
+    border: 1px solid blue;
+    height: auto;
+    width: 50%;
+    margin-top:  10px;
+    padding: 10px 5px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_box{
+    border-radius: 50px;
+    border:1px solid rgb(210,215,225);
+    height: 42px;
+    width: 584px;
+    text-align: center;
+    /* font-size: 20px; */
+    font-size: 13px;
+    font-weight: 600;
+}
+.search_box:focus{
+    box-shadow: 0px 0px 10px #f58b8b;
+    outline: none;
+}
+
+.search_box::placeholder{
+    color: rgb(164, 164, 168);
+    font-weight: 700;
+}
+.service-container{
+    margin-top: 20px;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.servix{
+    height: 140px;
+    width: 120px;
+    /* border: 1px solid orange; */
+    box-shadow: rgb(255, 255, 255) -9.1159px -18.2318px 24.3091px 0px,
+     rgb(236, 238, 241) 9.1159px 18.2318px 24.3091px 0px;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.service-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    box-shadow: rgb(255, 255, 255)-6.98333px -24.4417px 23.2778px 0px, 
+    rgb(233, 237, 242) 6.98333px 24.4417px 23.2778px 0px;
+}
+.service-img img{
+    height: 20px;
+    width: 20px;
+}
+.servix div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    height: 51px;
+    width: 51px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.part_duo{
+    margin-top: -50px;
+    background: url(../img/remita/mini_features_hero_img.png) no-repeat ;
+    background-size: cover;
+    background-position: left -160px top 0;
+    height: 45em;
+    width: 100vw;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid forestgreen;
+}
+.payement-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+    width: 45%;
+    border: 1px solid peru;
+    padding: 15px 0px;
+}
+.payement-photo img{
+    height: 99%;
+    width: 99%;
+}
+.payement-container{
+    height: 90%;
+    width: 520px;
+    border: 1px solid firebrick;
+}
+
+.payement-container h2{
+    font-size: 2em;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.payement-container p{
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 40px;
+    color: rgb(82,82,86);
+    line-height: 36px;
+    letter-spacing: 0.581944px;
+}
+.btns-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.learn-more-btn{
+    height: 55px;
+    width: 137px;
+    background-color: #e9ecef;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+#grey-btn{
+    background-color: #e9ecef;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+.sign-up-btn{
+    height: 55px;
+    width: 313px;
+    background-color: #f26524;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+.half-white-circle{
+    display: none;
+    position: absolute;
+    top: 1370px;
+    right: -200px;
+    background-color: white;
+    border-radius: 50%;
+    height: 390px;
+    width: 426px;
+    /* opacity: 0.9; */
+    
+}
+.part_trei{
+    padding: 0px 15px;
+    margin-top: -50px;
+    height: fit-content;
+    width: 100vw;
+    background: url(../img/remita/merchants_bg_hero_img.png) no-repeat;
+    background-size: cover;
+    border: 1px solid hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.app-abt{
+    margin-left: 75px;
+    height: 584px;
+    width: 50%;
+    border: 1px solid gold;
+    padding: 15px;
+}
+.merchant-img img{
+    height: 582px;
+    width: 582px;
+}
+.app-abt{
+    padding: 80px 0px;
+}
+.app-abt h2{
+    font-size: 2em;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.app-abt p{
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 40px;
+    color: rgb(82,82,86);
+    line-height: 36px;
+    letter-spacing: 0.581944px;
+}
+.app-sign-up-btn{
+    height: 55px;
+    width: 149px;
+    background-color: #f26524;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+.app-btns-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+}
+.part-quart{
+    height: 940px;
+    width: 100vw;
+    background: url(../img/remita/minimal_billers_bg.png) no-repeat center ;
+    background-size: cover;
+    border: 1px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pay-bills h2{
+    margin-top: 70px;
+    font-size: 2em;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 38.4px;
+    height: 76px;
+}
+
+.pay-bills p{
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(82,82,86);
+    line-height: 36px;
+    letter-spacing: 0.581944px;
+}
+.bills{
+    margin-top: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 67%;
+  height: 800px;
+  border: 1px solid rebeccapurple;
+
+}
+.brow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.bill-img{
+    margin-top: -30px;
+    width: 118px;
+    max-width:  118px;
+    height: 84px;
+    background: #fff;
+    min-height: 84px;
+    margin-right: 1rem;
+    border-radius: 15.5961px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 25.3437px 67.2582px -28.268px #d2d7e1;
+
+}
+.bills-btn{
+    margin-top: -46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.biller{
+    height: 53px;
+    width: 183px;
+    margin-right: 20px;
+}
+.other-bills{
+    height: 55px;
+    width: 171px;
+}
+.part-five{
+    height: 944px;
+    width: 100vw;
+    background: url(../img/remita/mini_download_bg_img.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.mobile-img{
+    width: 60%;
+}
+.mobile-img img{
+    width: 100%;
+}
+.mobile-app-text{
+    margin-top: 100px;
+    width: 40%;
+    height: 495px;
+    border: 1px solid black;
+}
+.mobile-app-text h2{
+    font-size: 2em;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
+    line-height: 38.4px;
+}
+
+.mobile-app-text p{
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 48px;
+    color: rgb(82,82,86);
+    line-height: 36px;
+    letter-spacing: 0.581944px;
+    border: 1px solid black;
+    width: 90%;
+    text-wrap: wrap;
+}
+.mobile-app-text p a{
+    color: #178a55;
+    text-decoration: underline;
+}
+.get-yours{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.part-six{
+    background: url(../img/remita/minimal_developers_bg\ \(1\).png) no-repeat center;
+    background-size: cover;
+    height: 1140px;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.part-six div{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part-six h2{
+    /* width: 108px; */
+    font-size: 2em;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 38.4px;
+    height: 76px;
+}
+.part-six p{
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1px;
+    color: rgb(82,82,86);
+    line-height: 36px;
+    letter-spacing: 0.581944px;
+    border: 1px solid black;
+    width: 90%;
+    text-wrap: wrap;
+}
+#pics{
+    height: 800px;
+    border: 1px solid black;
+
+}
+.under{
+    position: absolute;
+    left: 150px;  
+    z-index: 2;
+}
+.code{
+    z-index: 3;
+}
+#pics button{
+    height: 55px;
+    width: 272px;
+    margin-top: -100px;
+    margin-left: 90px;
+    z-index: 4;
+}
+.newsletter{
+    padding-top: 94px;
+    margin-top: 134px;
+    height: 345px;
+    width: 100vw;
+    background: url(../img/remita/minimal_newsletter_bg_img.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.newsletter h2{
+    font-size: 40px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+    line-height: 60px;
+    height: 50px;
+    color: white;
+}
+.searcher{
+    display: flex;
+    gap: 8px;
+    height: 72px;
+}
+.searcher input{
+    height: 50px;
+    width: 502px;
+    padding: 25px 15px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.searcher input::placeholder{
+    color: white;
+}
+.suscribe-btn{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    gap: 3px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.suscribe-btn span{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: rgb(217,81,41);
+}
+footer{
+    margin: 0px 59px;
+    margin-left: 100px;
+    padding: 40px 15px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+    height: 295px;
+    width: 80%;
+    border: 1px solid lawngreen;
+}
+.boxx{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 277px;
+    height: 187px;
+    text-wrap: wrap;
+}
+.boxx h2{
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: black;
+    line-height: 19.2px;
+    text-align: left;
+    width: 90%;
+    text-wrap: wrap;
+}
+
+.boxx p{
+    font-size: 14px;
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 16px;
+    color: black;
+    line-height: 24px;
+    text-align: left;
+    width: 100%;
+    text-wrap: wrap;
+}
+.boxx p span{
+    color: #f26524;
+}
+.privacy{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.privacy a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+#contact{
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h2{
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-media img{
+    height: 2em;
+    width: 2em;
+    opacity: 0.8;
+}
+.br{
+    display: flex;
+    gap: 5px;
+}
+.br img{
+    height: 60px;
+    width: 12em;
+    opacity: 0.8;
+}
+@media (max-width: 900px) {
+    nav a{
+        display: none;
+    }
+    .part_unu{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .part_unu > div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_text, .services{
+        width: 100%;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .home_text p{
+        text-align:center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+        width: 80%;
+        letter-spacing: normal;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .home_text{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    p{
+        letter-spacing: normal;
+        font-size: 1rem;
+    }
+    .part_duo{
+        display: flex;
+        align-items:center;
+        flex-direction: row;
+    }
+    .payement-photo, .payement-container{
+        width: 50%;
+    }
+    .btns-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .part_trei{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+    }
+    .app-abt{
+        width: 100%;
+    }
+    .part-quart{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+    }
+    .part-five{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+    }
+    .mobile-app-text{
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .mobile-app-text h2, p{
+        text-align: center;
+    }
+    .mobile-app-text p{
+        padding-left: 3em;
+        flex-wrap: wrap;
+    }
+    .part-six{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .br img{
+        height: 60px;
+        width: 9em;
+        opacity: 0.8;
+    }
+    
+}
+@media (max-width: 600px) {
+    nav{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: row-reverse; */
+    }
+    .menu .login{
+        display: none;
+    }
+    .menu .signUp{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        height: 2.5em;
+        width: 10em;
+        background-size: contain;
+    }
+    .menu{
+        flex-direction: row-reverse;
+        position: absolute;
+        left: -100px;
+    }
+    .menu_icon{
+        left: -90px;
+    }
+    .part_duo{
+        display: flex;
+        flex-direction: column;
+    }
+    .payement-photo{
+        width: 100%;
+    }
+    .payement-container{
+        width: 100%;
+    }
+    .part_trei{
+        display: flex;
+        flex-direction: column;
+        margin-top: 350px;
+    }
+    .app-abt{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .merchant-img{
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .pay-bills h2{
+        text-align: left;
+    }
+     .pay-bills p{
+        text-align: left;
+    }
+    .merchant-img img{
+        width: 100%;
+        height: auto;
+    }
+    .bills{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .brow{
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bill-img{
+        margin-top: 100px;
+        height: 1em;
+        width: 4.5em;
+        border: 1px solid black;
+    }
+    #pics{
+        width: 100%;
+    }
+    .code{
+        width: 99%;
+    }
+    .under{
+        display: none;
+    }
+    #pics button{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .newsletter-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-text h2{
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .newsletter{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .searcher{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .searcher input{
+        width: 90%;
+    }
+    .suscribe-btn{
+        height: 300px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .boxx h2{
+        font-weight: 400;
+    }
+    .boxx p{
+        font-weight: 400;
+    }
+    .privacy{
+        margin-top: 10px;
+       text-align: left;
+    }
+    .privacy a{
+        font-weight: 400;
+    }
+    #contact{
+        margin-left: 0px;
+        text-align: left;
+    }
+    #contact h2{
+        text-align: left;
+
+    }
+    .social-media{
+        display: flex;
+        justify-content: start;
+        margin-left: -80px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
